@@ -1,0 +1,83 @@
+.testimonials {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  &__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+    text-align: center;
+
+    &-image {
+      width: 42px;
+    }
+
+    &-content {
+      font-size: 2.2rem;
+    }
+
+    &-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #ff5a00;
+      border-radius: 50%;
+    }
+  }
+
+  &__box {
+    position: relative;
+    width: 700px;
+    background-color: #222222;
+    color: #fff;
+    margin: 40px auto 0 auto;
+    padding: 40px 40px 40px 120px;
+  }
+
+  &__name {
+    font-size: 1.8rem;
+
+    &::before {
+      content: url("../../assets/images/quote.png");
+      width: 120px;
+      height: 120px;
+      margin-right: 12px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 16px;
+
+    &::before {
+      position: absolute;
+      content: url("../../assets/images/quote.png");
+      margin-right: 12px;
+      bottom: -30px;
+      transform: scaleX(-1);
+      right: 0;
+    }
+  }
+
+  &__orange {
+    position: absolute;
+    left: -52px;
+    top: 16%;
+    width: 120px;
+    height: 120px;
+    background-color: #ff5a00;
+  }
+
+  &__image {
+    position: absolute;
+    left: -6%;
+    top: 0;
+    width: 100px;
+    height: 140px;
+    background-image: url("../../assets/images/client.jpg");
+    background-size: cover;
+  }
+}

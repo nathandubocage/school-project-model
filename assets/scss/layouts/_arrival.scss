@@ -1,0 +1,68 @@
+.arrival {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  &__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+    text-align: center;
+
+    &-image {
+      width: 42px;
+    }
+
+    &-content {
+      font-size: 2.2rem;
+
+      &--colored {
+        color: #00dbfb;
+      }
+    }
+
+    &-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #ff5a00;
+      border-radius: 50%;
+    }
+  }
+
+  &__description {
+    max-width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 40px auto 0 auto;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid lightgray;
+  }
+
+  &__image {
+    width: 64px;
+  }
+
+  &__name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,57 @@
+.header {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  height: 80px;
+  color: #fff;
+  margin: 0 auto;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  &__right {
+    cursor: pointer;
+    height: 30px;
+  }
+
+  &__logo {
+    width: 32px;
+    filter: brightness(0) invert(1);
+  }
+
+  &__brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  &__burger {
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: white;
+      width: 30px;
+      height: 2px;
+    }
+
+    &::before {
+      top: 20px;
+    }
+
+    &::after {
+      top: 10px;
+    }
+  }
+}

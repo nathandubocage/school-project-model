@@ -1,0 +1,72 @@
+.about {
+  background-image: url("../../assets/images/about-bg.jpg");
+  background-attachment: fixed;
+  padding: 80px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__right,
+  &__left {
+    flex: 1;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+
+    &-image {
+      width: 42px;
+      filter: brightness(0) invert(1);
+    }
+
+    &-content {
+      color: #ff5a00;
+      font-size: 2.2rem;
+
+      &--colored {
+        color: #fff;
+      }
+    }
+
+    &-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+  }
+
+  &__description {
+    max-width: 100%;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin: 20px auto;
+  }
+
+  &__button {
+    cursor: pointer;
+    background-color: #ff5a00;
+    color: #fff;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    padding: 14px 40px;
+  }
+
+  &__image {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+}
